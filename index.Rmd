@@ -118,13 +118,17 @@ ggplot(HeatingOil, aes(x = Temperature, y = Insulation, color = Heating_Oil)) +
 
 Penjelasan:
 
-Scatter plot ini menunjukkan hubungan antara Temperature (suhu lingkungan) dan Insulation (kualitas insulasi rumah), dengan warna titik-titik berdasarkan intensitas konsumsi Heating_Oil (semakin merah, semakin tinggi konsumsi minyak pemanas).
+Scatter plot ini menunjukkan hubungan antara suhu lingkungan (Temperature) dan kualitas insulasi rumah (Insulation), dengan warna titik-titik menunjukkan jumlah konsumsi heating oil (Heating_Oil). Semakin merah warnanya, semakin tinggi konsumsi minyak pemanas.
 
-Dari hasil visualisasi, terlihat beberapa hal:
+Hasil yang Terlihat:
 
-- Suhu yang lebih tinggi cenderung dihubungkan dengan insulasi yang lebih baik, karena     titik-titik yang lebih tinggi pada sumbu X (Temperature) sering kali juga berada lebih tinggi pada sumbu Y (Insulation), meskipun tidak ada korelasi yang sangat jelas.
+1. **Hubungan Suhu dan Insulasi**, secara umum, tidak tampak pola linier yang jelas antara suhu dan insulasi. Namun jika mengacu pada correlation matrix sebelumnya, terdapat korelasi negatif antara keduanya (-0.79), yang berarti rumah dengan insulasi tinggi cenderung berada di wilayah yang lebih dingin.
 
-- Konsumsi Heating Oil (warna titik): Warna titik mengindikasikan bahwa pada suhu yang lebih tinggi, konsumsi heating oil lebih rendah, sesuai dengan hasil korelasi sebelumnya antara Temperature dan Heating_Oil. Namun, kualitas insulasi (Insulation) tampaknya tidak memiliki pengaruh besar terhadap konsumsi minyak.
+2. **Konsumsi Heating_Oil (warna titik)**, titik-titik merah (konsumsi tinggi) lebih banyak muncul pada kombinasi suhu rendah dan insulasi tinggi. Ini sejalan dengan korelasi yang ditemukan sebelumnya:
+
+  - **Temperature** ↘ **Heating_Oil** (korelasi negatif, -0.77)
+
+  - **Insulation** ↗ **Heating_Oil** (korelasi positif, +0.74)
 
 
 ## Rekomendasi untuk Sarah
